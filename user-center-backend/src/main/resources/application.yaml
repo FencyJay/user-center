@@ -1,0 +1,24 @@
+
+
+spring:
+  application:
+    name: universe
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/universe2
+    username: root
+    password: 123456
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+  global-config:
+    db-config:
+      logic-delete-field: idDelete
+      logic-delete-value: 1 # 逻辑已删除值
+      logic-not-delete-value: 0 # 逻辑未删除值
+# 应用服务 WEB 访问端口
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+

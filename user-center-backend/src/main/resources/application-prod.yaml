@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://119.28.132.108:3306/universe
+    username: fei
+    password: fei666
+  session:
+    timeout: 86400
+server:
+  address: 0.0.0.0
+
